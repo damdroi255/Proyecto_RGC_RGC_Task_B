@@ -52,7 +52,7 @@ $result = mysqli_query($conn, $sql);
                             . '<form method="get" id="formtechnicianU">'
                                 . '<input type="hidden" name="id" value="idU3"/>'
                                 . '<input type="hidden" name="pagina" value="'.$pagina.'"/>'
-                                . '<input type="hidden" name="opcion" value="fotoI"/>'
+                                . '<input type="hidden" name="opcion" value="technicianU3"/>'
                                 . '<input type="hidden" name="indice" value="'.$row["id"].'"/>'
                                 . '<button type="submit" class="btn btn-xs btn-success">'
                                     . '<span class="glyphicon glyphicon-user"></span>'

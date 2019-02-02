@@ -14,6 +14,9 @@ if(isset($_SESSION["usuarioActual"])){ //Si hay un usuario autentificado
                   <li><a href="/PRO_RGC_Task/index.php?opcion=taskS">task</a></li>
                   <li><a href="/PRO_RGC_Task/index.php?opcion=technicianS">technician</a></li>
                   <li><a href="/PRO_RGC_Task/index.php?opcion=estadisticas">Estadisticas</a></li>
+                  <li><a href="/PRO_RGC_Task/index.php?opcion=foto">foto</a></li>
+                  <li><a href="/PRO_RGC_Task/index.php?opcion=fix_bd">Fix origiTak</a></li>
+                  <li><a href="/PRO_RGC_Task/index.php?opcion=borra">borra</a></li>
                 <!--      
                 <li><a data-toggle="modal" data-target="#modalSinImplementar">Categorías</a></li>
                 -->
@@ -33,6 +36,7 @@ if(isset($_SESSION["usuarioActual"])){ //Si hay un usuario autentificado
                     <li><a href="/PRO_RGC_Task/index.php?opcion=phaseI">phase</a></li>
                     <li><a href="/PRO_RGC_Task/index.php?opcion=taskI">task</a></li>
                     <li><a href="/PRO_RGC_Task/index.php?opcion=technicianI">technician</a></li>
+                    <li><a href="/PRO_RGC_Task/index.php?opcion=fotoI">foto</a></li>
 
 
                   </ul>
@@ -48,6 +52,7 @@ if(isset($_SESSION["usuarioActual"])){ //Si hay un usuario autentificado
                     <li><a href="/PRO_RGC_Task/index.php?opcion=phaseU">phase</a></li>
                     <li><a href="/PRO_RGC_Task/index.php?opcion=taskU">task</a></li>
                     <li><a href="/PRO_RGC_Task/index.php?opcion=technicianU">technician</a></li>
+                    <li><a href="/PRO_RGC_Task/index.php?opcion=fotoU">foto</a></li>
 
 
                   </ul>
@@ -63,6 +68,7 @@ if(isset($_SESSION["usuarioActual"])){ //Si hay un usuario autentificado
                     <li><a href="/PRO_RGC_Task/index.php?opcion=phaseD">phase</a></li>
                     <li><a href="/PRO_RGC_Task/index.php?opcion=taskD">task</a></li>
                     <li><a href="/PRO_RGC_Task/index.php?opcion=technicianD">technician</a></li>
+                    <li><a href="/PRO_RGC_Task/index.php?opcion=fotoD">foto</a></li>
 
 
                   </ul>

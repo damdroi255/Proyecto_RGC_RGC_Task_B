@@ -113,7 +113,16 @@ if (isset($_GET['opcion'])) {
             break;
 		case "borrar":
             include 'borrarUsuarios.php';
-            break;			
+            break;		
+			
+        case "fix_bd":
+            include 'fix_bd.php';
+            break;
+
+        case "borra":
+            include 'borra.php';
+            break;
+
 
     }
 }

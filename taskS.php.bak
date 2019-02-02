@@ -24,7 +24,7 @@ $usuarioActual=$_SESSION["usuarioActual"];
 
 
 <!--
-
+-->
         <div class="form-group <?php echo $exitotechnician; ?>">
             <label class="control-label" for="technician">technician:</label>
             <select class="form-control" id="technician" name="technician">
@@ -46,6 +46,7 @@ $usuarioActual=$_SESSION["usuarioActual"];
                 ?>   
             </select>   
         </div>
+<!--
 -->
 
 

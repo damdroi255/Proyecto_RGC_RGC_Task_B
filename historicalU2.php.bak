@@ -39,12 +39,12 @@ $result = mysqli_query($conn, $sql);
                     echo '<td>'.$row["id"].'</td>';
                     echo '<td><input type="text" name="task_id" form="formhistoricalU" value="'.$row["task_id"].'"/></td>';
                     echo '<td><input type="text" name="description" form="formhistoricalU" value="'.$row["description"].'"/></td>';
-                    echo '<td><input type="date" name="timestamp_date" form="formhistoricalU" value="'.$row["timestamp_date"].'"/></td>';
+                    echo '<td><input type="text" name="timestamp_date" form="formhistoricalU" value="'.$row["timestamp_date"].'"/></td>';
                     echo '<td><input type="text" name="priority" form="formhistoricalU" value="'.$row["priority"].'"/></td>';
                     echo '<td><input type="text" name="phase" form="formhistoricalU" value="'.$row["phase"].'"/></td>';
-                    echo '<td><input type="date" name="phase_date" form="formhistoricalU" value="'.$row["phase_date"].'"/></td>';
+                    echo '<td><input type="text" name="phase_date" form="formhistoricalU" value="'.$row["phase_date"].'"/></td>';
                     echo '<td><input type="text" name="technician" form="formhistoricalU" value="'.$row["technician"].'"/></td>';
-                    echo '<td><input type="date" name="commitment_date" form="formhistoricalU" value="'.$row["commitment_date"].'"/></td>';
+                    echo '<td><input type="text" name="commitment_date" form="formhistoricalU" value="'.$row["commitment_date"].'"/></td>';
                     echo '<td><input type="text" name="origin_task" form="formhistoricalU" value="'.$row["origin_task"].'"/></td>';
                     echo '<td>'
                             . '<form method="get" id="formhistoricalU">'

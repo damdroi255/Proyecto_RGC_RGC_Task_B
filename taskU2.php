@@ -54,7 +54,7 @@ $result = mysqli_query($conn, $sql);
                     }
                     echo '</select></td>';  
 
-                    echo '<td><input type="text" name="phase_date" form="formtaskU" value="'.$row["phase_date"].'"/></td>';
+                    echo '<td><input type="date" name="phase_date" form="formtaskU" value="'.$row["phase_date"].'"/></td>';
 
 					//echo '<td><input type="text" name="technician" form="formtaskU" value="'.$row["technician"].'"/></td>';
                     echo '<td><select class="form-control" name="technician" form="formtaskU">';
@@ -72,7 +72,7 @@ $result = mysqli_query($conn, $sql);
                     }
                     echo '</select></td>';  
 
-                    echo '<td><input type="text" name="commitment_date" form="formtaskU" value="'.$row["commitment_date"].'"/></td>';
+                    echo '<td><input type="date" name="commitment_date" form="formtaskU" value="'.$row["commitment_date"].'"/></td>';
                     
 					//echo '<td><input type="text" name="origin_task" form="formtaskU" value="'.$row["origin_task"].'"/></td>';
                     echo '<td><select class="form-control" name="origin_task" form="formtaskU">';

@@ -54,7 +54,7 @@ $result = mysqli_query($conn, $sql);
                     }
                     echo '</select></td>';  
 
-                    echo '<td><input type="text" name="phase_date" form="formtaskU" value="'.$row["phase_date"].'"/></td>';
+                    echo '<td><input type="date" name="phase_date" form="formtaskU" value="'.$row["phase_date"].'"/></td>';
 
 					//echo '<td><input type="text" name="technician" form="formtaskU" value="'.$row["technician"].'"/></td>';
                     echo '<td><select class="form-control" name="technician" form="formtaskU">';
@@ -107,23 +107,6 @@ $result = mysqli_query($conn, $sql);
                                     . '<span class="glyphicon glyphicon-remove"></span>'
                                 . '</button>'
                             . '</form>'
-							
-                            . '<form method="get">'
-                                . '<input type="hidden" name="opcion" value="taskI"/>'
-                                . '<input type="hidden" name="pagina" value="'.$pagina.'"/>'
-                                . '<input type="hidden" name="id" value="'.$row["id"].'"/>'
-                                . '<input type="hidden" name="description" value="'.$row["description"].'"/>'
-                                . '<input type="hidden" name="priority" value="'.$row["priority"].'"/>'
-                                . '<input type="hidden" name="phase" value="'.$row["phase"].'"/>'
-                                . '<input type="hidden" name="phase_date" value="'.$row["phase_date"].'"/>'
-                                . '<input type="hidden" name="technician" value="'.$row["technician"].'"/>'
-                                . '<input type="hidden" name="commitment_date" value="'.$row["commitment_date"].'"/>'
-                                . '<input type="hidden" name="origin_task" value="'.$row["origin_task"].'"/>'
-                                . '<button type="submit" class="btn btn-xs btn-success">'
-                                    . '<span class="glyphicon glyphicon-list-alt"></span>'
-                                . '</button>'
-                            . '</form>'
-							
                        . '</td>';
                 } else {
                 echo "<td>".$row["id"]."</td>";

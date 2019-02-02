@@ -3,7 +3,7 @@ include 'conexion.php';
 include 'cab_pag.php';
 ?>
 <table class="table">
-<caption>Statistics in historical</caption>
+<caption>Statistics in task</caption>
     <thead>
         <tr>
             <th>id</th>
@@ -14,6 +14,7 @@ include 'cab_pag.php';
             <th>descripcion Phase</th>
             <th>technician</th>
             <th>descripcion Technician</th>
+            <th>foto</th>
             <th>commitment_date</th>
             <th>origin_task</th>
             <th>dependiente_de</th>
@@ -50,6 +51,7 @@ $result = mysqli_query($conn, $sql);
                 echo "<td>".$row["dphase"]."</td>";
                 echo "<td>".$row["technician"]."</td>";
                 echo "<td>".$row["dtechnician"]."</td>";
+				echo "<td>"."<img src='img/".$row["technician"].".jpg' border='0' width='50' height='50'>"."</td>";
                 echo "<td>".$row["commitment_date"]."</td>";
                 echo "<td>".$row["origin_task"]."</td>";
                 echo "<td>".$row["dependiente_de"]."</td>";

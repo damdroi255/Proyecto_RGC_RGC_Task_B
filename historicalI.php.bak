@@ -107,7 +107,7 @@ if (isset($_GET["id"]) && isset($_GET["task_id"]) && isset($_GET["description"])
         </div>
         <div class="form-group <?php echo $exitotimestamp_date; ?>">
             <label class="control-label" for="timestamp_date">timestamp_date:</label>
-            <input type="date" class="form-control" id="timestamp_date" name="timestamp_date" value="<?php echo $timestamp_date; ?>"/>
+            <input type="text" class="form-control" id="timestamp_date" name="timestamp_date" value="<?php echo $timestamp_date; ?>"/>
             <span class="help-block"><?php echo $errortimestamp_date; ?></span>
         </div>
         <div class="form-group <?php echo $exitopriority; ?>">
@@ -122,7 +122,7 @@ if (isset($_GET["id"]) && isset($_GET["task_id"]) && isset($_GET["description"])
         </div>
         <div class="form-group <?php echo $exitophase_date; ?>">
             <label class="control-label" for="phase_date">phase_date:</label>
-            <input type="date" class="form-control" id="phase_date" name="phase_date" value="<?php echo $phase_date; ?>"/>
+            <input type="text" class="form-control" id="phase_date" name="phase_date" value="<?php echo $phase_date; ?>"/>
             <span class="help-block"><?php echo $errorphase_date; ?></span>
         </div>
         <div class="form-group <?php echo $exitotechnician; ?>">
@@ -132,7 +132,7 @@ if (isset($_GET["id"]) && isset($_GET["task_id"]) && isset($_GET["description"])
         </div>
         <div class="form-group <?php echo $exitocommitment_date; ?>">
             <label class="control-label" for="commitment_date">commitment_date:</label>
-            <input type="date" class="form-control" id="commitment_date" name="commitment_date" value="<?php echo $commitment_date; ?>"/>
+            <input type="text" class="form-control" id="commitment_date" name="commitment_date" value="<?php echo $commitment_date; ?>"/>
             <span class="help-block"><?php echo $errorcommitment_date; ?></span>
         </div>
         <div class="form-group <?php echo $exitoorigin_task; ?>">

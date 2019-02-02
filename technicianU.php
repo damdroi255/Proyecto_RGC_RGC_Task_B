@@ -8,6 +8,7 @@ include 'cab_pag.php';
         <tr>
             <th>id</th>
             <th>descripcion</th>
+            <th>foto</th>
             <th>Modificar</th>
         </tr>
     </thead>
@@ -26,6 +27,7 @@ $result = mysqli_query($conn, $sql);
                 echo "<tr>";
                 echo "<td>".$row["id"]."</td>";
                 echo "<td>".$row["descripcion"]."</td>";
+				echo "<td>"."<img src='img/".$row["id"].".jpg' border='0' width='75' height='75'>"."</td>";
                 echo '<td>'
                         . '<form method="get">'
                             . '<input type="hidden" name="opcion" value="technicianU2"/>'

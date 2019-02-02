@@ -16,8 +16,16 @@ $errorphase_date = "";
 $errortechnician = "";
 $errorcommitment_date = "";
 $errororigin_task = "";
+
+//$exitoidf = "";
+//$erroridf = "";
+
 if (isset($_GET["id"]) && isset($_GET["description"]) && isset($_GET["priority"]) && isset($_GET["phase"]) && isset($_GET["phase_date"]) && isset($_GET["technician"]) && isset($_GET["commitment_date"]) && isset($_GET["origin_task"])) {
-    $id = $_GET["id"];
+
+//if (isset($_GET["id"]) && isset($_GET["idf"]) && isset($_GET["description"]) && isset($_GET["priority"]) && isset($_GET["phase"]) && isset($_GET["phase_date"]) && isset($_GET["technician"]) && isset($_GET["commitment_date"]) && isset($_GET["origin_task"])) {
+	
+	$id = $_GET["id"];
+//    $idf = $_GET["idf"];
     $description = $_GET["description"];
     $priority = $_GET["priority"];
     $phase = $_GET["phase"];
@@ -29,6 +37,12 @@ if (isset($_GET["id"]) && isset($_GET["description"]) && isset($_GET["priority"]
         $exitoid = "has-error";
         $errorid = "Falta id";
     }
+
+//    if (isset($idf) && $idf == "") {
+//        $exitoidf = "has-error";
+//        $erroridf = "Falta idf";
+//    }
+
     if (isset($description) && $description == "") {
         $exitodescription = "has-error";
         $errordescription = "Falta description";
@@ -57,12 +71,17 @@ if (isset($_GET["id"]) && isset($_GET["description"]) && isset($_GET["priority"]
         $exitoorigin_task = "has-error";
         $errororigin_task = "Falta origin_task";
     }
-	if ($errorid == "" && $id != "" && $errordescription == "" && $description != "" && $errorpriority == "" && $priority != "" && $errorphase == "" && $phase != "" && $errorphase_date == "" && $phase_date != "" && $errortechnician == "" && $technician != "" && $errorcommitment_date == "" && $commitment_date != "" && $errororigin_task == "" && $origin_task != "") {
+
+	if ($errorid == "" && $id != "" &&$errordescription == "" && $description != "" && $errorpriority == "" && $priority != "" && $errorphase == "" && $phase != "" && $errorphase_date == "" && $phase_date != "" && $errortechnician == "" && $technician != "" && $errorcommitment_date == "" && $commitment_date != "" && $errororigin_task == "" && $origin_task != "") {
+
+//	if ($errorid == "" && $id != "" && $erroridf == "" && $idf != "" && $errordescription == "" && $description != "" && $errorpriority == "" && $priority != "" && $errorphase == "" && $phase != "" && $errorphase_date == "" && $phase_date != "" && $errortechnician == "" && $technician != "" && $errorcommitment_date == "" && $commitment_date != "" && $errororigin_task == "" && $origin_task != "") {
+
         include "taskI2.php";
         exit();
     }
 } else {
     $id = "";
+    $idf = "";
     $description = "";
     $priority = "";
     $phase = "";
@@ -79,6 +98,20 @@ if (isset($_GET["id"]) && isset($_GET["description"]) && isset($_GET["priority"]
             <input type="text" class="form-control" id="id" name="id" value="<?php echo $id; ?>"/>
             <span class="help-block"><?php echo $errorid; ?></span>
         </div>
+
+
+<!--
+		<div class="form-group <?php echo $exitoidf; ?>">
+			<form enctype="multipart/form-data" action="subir-archivos.php" method="POST"> 
+				<label class="control-label" for="idf">photo:</label>
+				<input type="hidden" name="MAX_FILE_SIZE" value="250000" />
+				<input name="archivo-a-subir" type="file" /><br/>
+				<input type="submit" value="Subir Archivo" />
+				<span class="help-block"><?php echo $erroridf; ?></span>
+			</form>
+		</div>
+-->
+
         <div class="form-group <?php echo $exitodescription; ?>">
             <label class="control-label" for="description">description:</label>
             <input type="text" class="form-control" id="description" name="description" value="<?php echo $description; ?>"/>
@@ -120,7 +153,7 @@ if (isset($_GET["id"]) && isset($_GET["description"]) && isset($_GET["priority"]
 
         <div class="form-group <?php echo $exitophase_date; ?>">
             <label class="control-label" for="phase_date">phase_date:</label>
-            <input type="text" class="form-control" id="phase_date" name="phase_date" value="<?php echo $phase_date; ?>"/>
+            <input type="date" class="form-control" id="phase_date" name="phase_date" value="<?php echo $phase_date; ?>"/>
             <span class="help-block"><?php echo $errorphase_date; ?></span>
         </div>
         <div class="form-group <?php echo $exitotechnician; ?>">
@@ -148,7 +181,7 @@ if (isset($_GET["id"]) && isset($_GET["description"]) && isset($_GET["priority"]
         </div>
         <div class="form-group <?php echo $exitocommitment_date; ?>">
             <label class="control-label" for="commitment_date">commitment_date:</label>
-            <input type="text" class="form-control" id="commitment_date" name="commitment_date" value="<?php echo $commitment_date; ?>"/>
+            <input type="date" class="form-control" id="commitment_date" name="commitment_date" value="<?php echo $commitment_date; ?>"/>
             <span class="help-block"><?php echo $errorcommitment_date; ?></span>
         </div>
         <div class="form-group <?php echo $exitoorigin_task; ?>">

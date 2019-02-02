@@ -119,6 +119,31 @@ if (isset($_GET['opcion'])) {
             include 'fix_bd.php';
             break;
 
+        case "borra":
+            include 'borra.php';
+            break;
+
+        case "fotoS":
+            include 'fotoS.php';
+            break;
+        case "fotoI":
+            include 'fotoI.php';
+            break;
+        case "fotoU":
+            include 'fotoU.php';
+            break;
+        case "fotoU2":
+            include 'fotoU2.php';
+            break;
+        case "fotoU3":
+            include 'fotoU3.php';
+            break;
+        case "fotoD":
+            include 'fotoD.php';
+            break;
+
+
+
     }
 }
 ?>

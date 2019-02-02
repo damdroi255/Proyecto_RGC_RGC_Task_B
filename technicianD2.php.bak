@@ -16,7 +16,7 @@ if (is_file($jpg_borrar)){
 	unlink($jpg_borrar);
 	echo "Technician con id nº ".$indice." borrado satisfactoriamente.";
 } else {
-	echo "no existe imagen del technician con id nº ".$indice;
+	echo "no existe ".$indice;
 }
 
 

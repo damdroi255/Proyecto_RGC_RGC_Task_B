@@ -14,7 +14,8 @@ if(isset($_SESSION["usuarioActual"])){ //Si hay un usuario autentificado
                   <li><a href="/PRO_RGC_Task/index.php?opcion=taskS">task</a></li>
                   <li><a href="/PRO_RGC_Task/index.php?opcion=technicianS">technician</a></li>
                   <li><a href="/PRO_RGC_Task/index.php?opcion=estadisticas">Estadisticas</a></li>
-                  <li><a href="/PRO_RGC_Task/index.php?opcion=fix_bd">Fix origiTak</a></li>
+                  <li><a href="/PRO_RGC_Task/index.php?opcion=fix_bd">Fix originTask</a></li>
+                  <li><a href="/PRO_RGC_Task/index.php?opcion=borra">borra</a></li>
                 <!--      
                 <li><a data-toggle="modal" data-target="#modalSinImplementar">Categorías</a></li>
                 -->
